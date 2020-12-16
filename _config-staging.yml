@@ -1,0 +1,35 @@
+# Site settings
+type: website
+title: ProcureAM
+email: wyhaines@gmail.com
+description: >-
+  ProcureAM
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://procuream.millrgroup.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+# SASS
+sass:
+  sass_dir: assets/_sass
+  style: compressed
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-include-with-frontmatter
+
+source: src/
+destination: new_doc
+
+include:
+  - _pages
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      comments: false

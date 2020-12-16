@@ -1,0 +1,75 @@
+#!/bin/bash
+
+BINDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DIR=$(readlink -f "${BINDIR}/..")
+
+# Ensure that only one of these is running at once.
+
+MAXLOCKWAIT=600
+INTERVAL=5
+LOCKFILE="${DIR}/rebuild.lock"
+lockwait=0
+while true; do
+  if (( lockwait > MAXLOCKWAIT )); then
+    echo "Timeout waiting for rebuild script on PID `cat ${LOCKFILE}`. Exiting."
+    exit 1
+  fi
+
+  if [ -e ${LOCKFILE} ] && kill -0 `cat ${LOCKFILE}`; then
+    sleep 5
+    lockwait=$(expr ${lockwait} + ${INTERVAL})
+  else
+    break
+  fi
+done
+
+# make sure the lockfile is removed when we exit and then claim it
+trap "rm -f ${LOCKFILE}; exit" INT TERM EXIT
+echo $$ > ${LOCKFILE}
+
+DOCDIR="${DIR}/doc"
+NETLIFYDIR="${DOCDIR}/admin"
+BASE="$( basename ${DIR} )"
+RVMDIR="/usr/share/rvm"
+RUBYVERSION="2.6.0"
+BUNDLER="${RVMDIR}/wrappers/ruby-${RUBYVERSION}/bundle"
+BRANCH=`( cd ${DIR} && git rev-parse --abbrev-ref HEAD )`
+JEKYLLCONFIG="_config-${BRANCH}.yml"
+DOC_KEEP_COUNT=4 # Actual files kept is one less than this.
+NEWDOC="new_doc"
+DOCPREFIX="doc-"
+
+cd ${DIR}
+
+# Ensure Gemfile.lock is valid
+${BUNDLER} update && ${BUNDLER} install
+
+# Rebuild with Jekyll
+${BUNDLER} exec jekyll build --config ${JEKYLLCONFIG} --quiet
+
+if [ $? -eq 0 ]
+then
+  # It didn't fail.
+
+  DATE=`date '+%Y-%m-%d:%H-%M-%S'`
+  NEW_DOCPATH="${DOCPREFIX}${DATE}"
+
+  mv ${NEWDOC} ${NEW_DOCPATH}
+
+  ln -sfT ${NEW_DOCPATH} doc
+
+  # Only keep the last DOC_KEEP_COUNT doc directories.
+
+  ls -td "${DOCPREFIX}"* | grep -v '/$' | tail -n "+${DOC_KEEP_COUNT}" | xargs rm -rf
+
+  # Ensure that on whichever branch this runs, the appropriate configuration
+  # file for Netlify-CMS is linked.
+
+  ln -sf "${NETLIFYDIR}/config-${BRANCH}.yml" "${NETLIFYDIR}/config.yml"
+else
+  # It failed. Don't change anything.
+  echo "Jekyll failed."
+fi
+
+# Clear lock
+rm -f ${LOCKFILE}

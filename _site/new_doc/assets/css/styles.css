@@ -1,0 +1,638 @@
+body {
+  background: #0f0f0f;
+  color: #e0e0e0;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a,
+a:focus,
+a:hover {
+  color: #4db848;
+  outline: 0;
+}
+
+a.btn.btn-primary {
+  color: #000;
+}
+
+a.btn.btn-primary:hover {
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #4db848;
+  border-color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #4db848;
+  border-color: #000;
+  color: #000;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 0;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer .quicklinks .list-inline-item {
+  padding-left: 20px;
+}
+
+footer .section1 {
+  text-align: left;
+}
+
+footer .section2 {
+  text-align: center;
+}
+
+footer .section3 {
+  text-align: right;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #4db848;
+  font-weight: 500;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+h1.fund-name {
+  color: #fff;
+  font-size: 22px;
+}
+
+h1.fund-symbol {
+  font-size: 36px;
+  margin-bottom: 2px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h2.card-title {
+  margin-bottom: 2px;
+}
+
+h2.fund-symbol {
+  font-size: 36px;
+  margin-bottom: 2px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h3.as-of {
+  margin-bottom: -10px;
+  margin-top: 25px;
+}
+
+h3.card-title {
+  margin-bottom: 1rem;
+}
+
+h3.fund-name {
+  color: #fff;
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h4.as-of {
+  margin: 20px 0 -10px 0;
+}
+
+h4.table-label {
+  margin: 10px 0 -10px 0;
+}
+
+p.table-label {
+  margin: 10px 0 -10px 0
+}
+
+sup {
+  padding-left: 2px;
+}
+
+table {
+  font-size: 0.90rem;
+  margin-top: 20px;
+}
+
+table td {
+  color: #333;
+}
+
+table th {
+  border-top: 1px solid #000;
+  color: #333;
+}
+
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+.accordion .card-header .btn {
+  text-align: left;
+  white-space: normal;
+}
+
+.card {
+  background-color: inherit;
+}
+
+.card-body {
+  padding: 0.50rem 1.25rem;
+}
+
+.card-deck {
+  margin-top: 20px;
+}
+
+.card-header {
+  padding: 0.50rem 0.50rem;
+}
+
+.card-header .btn-link {
+  font-size: 18px;
+}
+
+.card-header .btn-link:focus,
+.card-header .btn-link:hover {
+  color: #4db848;
+  text-decoration: none;
+}
+
+.card-img-top {
+  margin: 10px 0 20px 0;
+  text-align: center;
+  width: 50%;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+.carousel {
+  margin: 86px 0 0 0;
+}
+
+.contact {
+  background-color: #4db848;
+  padding: 40px 0;
+}
+
+.contact .btn-primary {
+  background-color: #333;
+  border-color: #000;
+}
+
+.contact .btn-primary:hover {
+  background-color: #333;
+  border-color: #000;
+  color: #4db848;
+}
+
+.contact h1 {
+  color: #333;
+  text-align: left;
+}
+
+.disclosures {
+  font-size: 85%;
+  line-height: 1.25;
+}
+
+.disclosures p {
+  margin-bottom: 8px;
+}
+
+.documents .table td,
+.documents .table th {
+  padding: 0.50rem 0.75rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.documents .table .thead-dark th {
+  background-color: #333;
+  border-color: #333;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  background-color: #0f0f0f;
+  margin: -0.125rem 0 0;
+  padding: 0;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #fff;
+  padding: 0 0.5rem;
+}
+
+.dropdown-menu .dropdown-item.active {
+  background-color: #0f0f0f;
+  color: #4db848;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #0f0f0f;
+  color: #4db848;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.fund .table td,
+.fund .table th {
+  padding: 0.50rem 0.75rem;
+  vertical-align: middle;
+}
+
+.fund-data {
+  margin: 35px 0 15px 0;
+}
+
+.hide {
+  display: none;
+}
+
+.img-thumbnail {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0.05rem;
+  height: auto;
+  margin-right: 10px;
+  max-width: 100%;
+  padding: 0.05rem;
+}
+
+.important {
+  color: #4db848;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.important2 {
+  color: #4db848;
+  font-size: 24px;
+}
+
+.important {
+  color: #4db848;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.list-inline-item {
+  padding-right: 15px;
+}
+
+.list-inline-item:last-child {
+  padding-right: 0;
+}
+
+.navbar {
+  background-color: #0f0f0f;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  background-color: #0f0f0f;
+  color: #fff;
+  font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #4db848;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #4db848;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #4db848;
+  color: #fff;
+}
+
+.news .card {
+  background-color: #0f0f0f;
+  margin-top: 20px;
+}
+
+.news .card .list-group-item {
+  background-color: #0f0f0f;
+}
+
+.news .date {
+  -ms-flex: 0 0 175px;
+  flex: 0 0 175px;
+  margin-bottom: 5px;
+}
+
+.news .btn-primary {
+  color: #333;
+}
+
+.news .btn-primary:hover {
+  color: #fff;
+}
+
+.news .sidebar {
+  -ms-flex: 0 0 150px;
+  flex: 0 0 150px;
+  margin: 15px 0;
+}
+
+.news-select {
+  margin: 25px 0;
+}
+
+.quick-links {
+  margin: 20px 0;
+}
+
+.quick-links .nav-link {
+  padding: 0.25rem 1.5rem 0.25rem 0;
+}
+
+.table {
+  background-color: #fff;
+}
+
+.table td,
+.table th {
+  border-top: 1px solid #ccc;
+  padding: 0.25rem 0.75rem;
+}
+
+.table .thead-dark th {
+  background-color: #333;
+}
+
+.table-striped tbody tr:nth-of-type(2n+1) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#contactForm {
+  background-color: #4db848;
+  margin-top: 20px;
+}
+
+#contactForm .section-heading {
+  color: #fff;
+}
+
+#contactForm select.form-control:not([size]):not([multiple]) {
+  height: calc(2.25rem + 1px);
+}
+
+#contactForm .form-group {
+  margin-bottom: 15px;
+}
+
+#contactForm .form-group input,
+#contactForm .form-group select,
+#contactForm .form-group textarea {
+  padding: 8px 20px;
+}
+
+#contactForm .form-group input.form-control {
+  height: auto;
+}
+
+#contactForm .form-group textarea.form-control {
+  height: 248px;
+}
+
+#contactForm .form-control:focus {
+  border-color: #333;
+  box-shadow: none;
+}
+
+#contactForm ::-webkit-input-placeholder {
+  color: #999;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: italic;
+}
+
+#contactForm :-moz-placeholder {
+  color: #999;
+  /* Firefox 18- */
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: italic;
+}
+
+#contactForm ::-moz-placeholder {
+  color: #999;
+  /* Firefox 19+ */
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: italic;
+}
+
+#contactForm :-ms-input-placeholder {
+  color: #999;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: italic;
+}
+
+#contactForm .form-group label {
+  color: #333;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  padding: 0 20px 0 0;
+}
+
+#contactForm option {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+#contactForm select {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#content {
+  min-height: 500px;
+  padding: 40px 0;
+}
+
+#subscription {
+  border-bottom: 20px solid #4db848;
+  padding: 40px 0;
+}
+
+#subscriptionForm {
+  margin: 25px 0;
+}
+
+#subscriptionForm .section-heading {
+  color: #fff;
+}
+
+#subscriptionForm select.form-control:not([size]):not([multiple]) {
+  height: calc(2.25rem + 1px);
+}
+
+#subscriptionForm sup {
+  color: #f00;
+  font-size: 120%;
+  top: -0.25em;
+}
+
+#subscriptionForm .form-group {
+  margin-bottom: 15px;
+}
+
+#subscriptionForm .form-group input {
+  padding: 8px 20px;
+}
+
+#subscriptionForm .form-group input.form-control {
+  height: auto;
+}
+
+#subscriptionForm .form-group textarea.form-control {
+  height: 248px;
+}
+
+#subscriptionForm .form-control:focus {
+  border-color: #333;
+  box-shadow: none;
+}
+
+#subscriptionForm ::-webkit-input-placeholder {
+  color: #999;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: italic;
+}
+
+#subscriptionForm :-moz-placeholder {
+  color: #999;
+  /* Firefox 18- */
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: italic;
+}
+
+#subscriptionForm ::-moz-placeholder {
+  color: #999;
+  /* Firefox 19+ */
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: italic;
+}
+
+#subscriptionForm :-ms-input-placeholder {
+  color: #999;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: italic;
+}
+
+#subscriptionForm .form-group label {
+  color: #fff;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  padding: 0 20px 0 0;
+}
+
+#subscriptionForm .note {
+  font-size: 85%;
+  text-align: right !important;
+}
+
+@media (max-width: 991.98px) {
+  footer .list-inline-item {
+    padding-left: 0;
+  }
+  
+  footer .section1 {
+    margin-bottom: 6px;
+    text-align: left;
+  }
+
+  footer .section2 {
+    text-align: left;
+  }
+
+  footer .section3 {
+    text-align: left;
+  }
+}
+
+@media (max-width: 807.98px) {
+  .navbar-expand-custom > .container,
+  .navbar-expand-custom > .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 808px) {
+  .navbar-expand-custom {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+  .navbar-expand-custom .navbar-nav {
+    flex-direction: row;
+  }
+  .navbar-expand-custom .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  .navbar-expand-custom .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .navbar-expand-custom > .container,
+  .navbar-expand-custom > .container-fluid {
+    flex-wrap: nowrap;
+  }
+  .navbar-expand-custom .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+  .navbar-expand-custom .navbar-toggler {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .carousel {
+    margin: 76px 0 0 0;
+  }
+
+  .navbar-brand img {
+    height: 50px;
+  }
+}
