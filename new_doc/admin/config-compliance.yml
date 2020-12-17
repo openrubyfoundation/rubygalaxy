@@ -1,0 +1,60 @@
+backend:
+  name: gitlab
+  branch: compliance # Branch to update (optional; defaults to master)
+  repo: millrgroup/procuream # Path to your GitLab repository
+  auth_type: implicit # Required for implicit grant
+  app_id: 1cef04206ef52ffec99f0616aa622c6cd6501b782ae19c76d91d44b8c3541116 # Application ID from your GitLab settings
+  api_root: https://gitlab.swiftcore.org/api/v4
+  base_url: https://gitlab.swiftcore.org
+  auth_endpoint: oauth/authorize
+media_folder: "src/assets" # Media files will be stored in the repo under images/uploads
+public_folder: "/assets"
+display_url: "https://procuream.compliance4.us"
+logo_url: "https://procuream.compliance4.us/assets/images/logo.png"
+slug:
+  encoding: "unicode"
+  clean_accents: true
+collections:
+  - name: pages
+    label: Pages
+    folder: "src/_pages"
+    create: true
+    format: "yaml-frontmatter"
+    extension: html
+    fields:
+      - {label: Layout, name: layout, widget: select, default: default, options: ["default", "uncompressed-default", "homepage", "uncompressed-homepage"]}
+      - {label: Title, name: title, widget: string}
+      - {label: Page ID, name: pageid, widget: string, required: true}
+      - {label: Permalink, name: permalink, widget: string, default: "//"}
+      - {label: Body, name: body, widget: markdown, required: true}
+  - name: layouts
+    label: Layouts
+    folder: "src/_layouts"
+    create: true
+    format: "yaml-frontmatter"
+    extension: html
+    fields:
+      - {label: Layout, name: layout, widget: string, default: default, required: true}
+      - {label: Title, name: title, widget: string, required: true}
+      - {label: Body, name: body, widget: markdown, required: true}
+  - name: includes
+    label: Includes
+    folder: "src/_includes"
+    create: true
+    format: "yaml-frontmatter"
+    extension: html
+    fields:
+      - {label: Title, name: title, widget: string, required: true}
+      - {label: Body, name: body, widget: markdown, required: true}
+  - name: post
+    label: Posts
+    folder: "src/_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: Layout, name: layout, widget: hidden, default: post}
+      - {label: Title, name: title, widget: string}
+      - {label: Keywords, name: keywords, widget: string, required: false}
+      - {label: Description, name: description, widget: string, required: false}
+      - {label: Thumbnail, name: thumbnail, widget: image, required: false}
+      - {label: Body, name: body, widget: markdown, required: false}

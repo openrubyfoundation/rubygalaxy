@@ -1,2 +1,2 @@
-# rubygalaxyio
-The RubyGalaxy.io Homepage
+# RG - To infinity and Beyond
+
