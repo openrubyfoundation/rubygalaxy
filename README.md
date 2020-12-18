@@ -9,7 +9,7 @@ Announcing RubyGalaxy, an online meetup for Rubyist around the world, and if we'
 - Our review committee will add comments to the pull request. Please respond to those
 - If your pull request is merged, we will contact you directly and send you some sick RubyGalaxy swag. It will be out-of-this-world. I promise.
 
-*Add topic suggestions or allowing this to be a way for people to get ideas
+*We invite all talks! These tracks are more suggestions or ideas :)
 
 ### Tracks
 #### Building Inclusive Communities
