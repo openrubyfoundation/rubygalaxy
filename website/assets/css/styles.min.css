@@ -1,5 +1,6 @@
 .footer-dark {
-  background-color: #000;
+	background-color: #000;
+	padding-bottom: 20px;
 }
 
 .footer-dark .item.text p {
