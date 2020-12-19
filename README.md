@@ -28,3 +28,6 @@ Ruby is a versatile language that has been used to implement the most whimsical 
 
 It wouldnt be software development if there weren't mistakes or stories to tell. This track are the stories of Ruby. We want to hear about your experience with mistakes and lessons learned.  
 
+##### Pull Request Sample
+
+[Sample](https://github.com/openrubyfoundation/rubygalaxy/pull/2)
