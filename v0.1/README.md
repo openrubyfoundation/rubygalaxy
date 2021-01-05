@@ -4,7 +4,7 @@
 - **Release URL**: rubygalaxy.io/0.1
 
 To submit a talk, please open a pull request into this repository with
-- A markdown file with your talk title (ex. MyJourneyinTechfromStarbuckstoMicrosoft_ChloeCondon)
+- A markdown file with your talk title (ex. MyJourneyWithJekyll_DannyRamos)
 - Information about you in the description
    - Name: Danny Ramos
    - Title: Associate Developer Relations Engineer
