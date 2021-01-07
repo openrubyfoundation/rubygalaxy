@@ -1,8 +1,8 @@
-* Name:
-* Title: 
-* Twitter (Optional):
-* Email (Optional):
-* Company (Optional):
+* **Name:**
+* **Title:** 
+* **Twitter (Optional):**
+* **Email (Optional):**
+* **Company (Optional):**
 
 ---
 
