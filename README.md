@@ -5,7 +5,7 @@ Announcing RubyGalaxy, an online meetup for Rubyist around the world, and if we'
 ### How to Submit a Talk
 - Fork this repository
 - Create a Pull Request to this repository with a markdown file with your talk title
-(ex. MyJourneyinTechfromStarbuckstoMicrosoft_ChloeCondon). 
+(ex. Trapped_in_the_Jekyll-Space_Continuum_DannyRamos). 
 - Our review committee will add comments to the pull request. Please respond to those
 - If your pull request is merged, we will contact you directly and send you some sick RubyGalaxy swag. It will be out-of-this-world. I promise.
 
