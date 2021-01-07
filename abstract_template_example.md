@@ -2,6 +2,7 @@
 * **Title**: Associate Developer Relations Engineer 
 * **Twitter (Optional)**: @muydanny
 * **Email (Optional)**: dramos@newrelic.com
+* **Company (Optional)**: New Relic
 
 ---
 * **Talk Title**: Trapped in the Jekyll-Space Continuum
