@@ -660,3 +660,9 @@
 	color: #fff;
 	outline: 0!important
 }
+
+.img-astronaut {
+	max-height: 500px;
+	text-align: center;
+	padding-bottom: 100px
+}
