@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="assets/css/styles.min.css">
   <link rel="shortcut icon" type="image/png" href="favicon.png">
-
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 </head>
 
@@ -83,6 +83,17 @@ style="font-family: inter;font-size: 20px;font-weight: 20px;color: white;"><stro
       </div>
     </div>
   </div>  -->
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 <div class="footer-dark">
   <footer>
     <div class="container">
