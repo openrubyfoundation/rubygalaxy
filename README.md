@@ -1,5 +1,8 @@
 # Ruby Galaxy
 #### Release v.01
+- **Release Party**: Jan 28th, 2020 12pm PST on **RubyGalaxy Twitch** 
+- **Release URL**: rubygalaxy.io/0.1
+
 Announcing RubyGalaxy, an online meetup for Rubyist around the world, and if we're lucky - the galaxy. Our meetup revolves around 4 overarching themes - Ruby for Beginners, Building Inclusive Communities, Weird Ruby, and Veterans of Ruby.
 
 ### How to Submit a Talk
