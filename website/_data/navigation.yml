@@ -1,8 +1,0 @@
-# specify main menu items here
-
-- text: Home
-  url: /
-- text: About
-  url: /about
-- text: Talks
-  url: /Talks
