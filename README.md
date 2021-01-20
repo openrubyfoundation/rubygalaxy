@@ -1,6 +1,6 @@
 # Ruby Galaxy
 #### Release v.01
-- **Release Party**: Jan 28th, 2020 12pm PST on **RubyGalaxy Twitch** 
+- **Release Party**: Jan 28th, 2021 12pm PST on **RubyGalaxy Twitch** 
 - **CFP Closes**: Jan 23rd, 2020 12pm PST
 - **Release URL**: rubygalaxy.io/0.1
 
