@@ -1,0 +1,20 @@
+// List your mixins in here to keep things tidy
+
+// A basic button
+@mixin button($btn-bg, $btn-text) {
+  font-weight: $bold-font-weight;
+  padding: 0.8rem;
+  border-radius: 3px;
+	line-height: $base-line-height;
+	color: $btn-text;
+	background-color: $btn-bg;
+	border: 3px solid $btn-bg;
+}
+
+// Disable text selection
+@mixin user-select($argument: none){
+  -webkit-user-select: $argument;
+  -moz-user-select: $argument;
+  -ms-user-select: $argument;
+  user-select: $argument;
+}

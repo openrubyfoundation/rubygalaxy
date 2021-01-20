@@ -1,0 +1,21 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.section == "home" %}
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+  {% else %}
+    <title>{{ page.title }}</title>
+    {% if page.meta_description %}
+      <meta name="description" content="{{ page.meta_description }}">
+    {% endif %}
+  {% endif %}
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  {% if jekyll.environment == 'production' and site.analytics %}
+    {% include analytics.html %}
+  {% endif %}
+  <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <style>
+    a { text-decoration: none; }
+  </style>
+</head>
