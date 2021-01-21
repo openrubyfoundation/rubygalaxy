@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<h2>{{ page.title }}</h2>
+
+{% include page-intro.html %}
+
+{{ content }}
+
+<section>
+  <ul class="twocolumns">
+    {% for post in site.posts %}
+      <a href="{{ post.url }}">
+      <li>
+        <img src="{{ post.coverimage }}"></img>
+        <h3>{{ post.title }}</h3>
+        <time datetime="{{ post.date }}">
+          <small>
+            by {{ post.author }}
+          </small>
+        </time>
+      </li>
+      </a>
+    {% endfor %}
+  </ul>
+
+</section>
