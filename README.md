@@ -5,7 +5,7 @@
 - **Videos Due**: Jan 27th, 2021
 - **Release URL**: [Ruby Galaxy](rubygalaxy.io)
 
-Announcing RubyGalaxy, an online meetup for Rubyist around the world, and if we're lucky - the galaxy. Our meetup revolves around 4 overarching themes - Ruby for Beginners, Building Inclusive Communities, Weird Ruby, and Veterans of Ruby.
+Announcing RubyGalaxy, an online meetup for Rubyists around the world, and if we're lucky - the galaxy. Our meetup revolves around 4 overarching themes - Ruby for Beginners, Building Inclusive Communities, Weird Ruby, and Veterans of Ruby.
 
 ### How to Submit a Talk
 - Fork this repository
