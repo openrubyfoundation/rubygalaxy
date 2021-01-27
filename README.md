@@ -3,7 +3,7 @@
 - **Release Party**: Jan 28th, 2021 12pm PST on **TheRubyGalaxy Twitch** 
 - **CFP Closes**: Jan 23rd, 2021 12pm PST
 - **Videos Due**: Jan 27th, 2021 12pm PST
-- **Release URL**: [Ruby Galaxy](rubygalaxy.io)
+- **Release URL**: [Ruby Galaxy](https://rubygalaxy.io/)
 
 Announcing RubyGalaxy, an online meetup for Rubyists around the world, and if we're lucky - the galaxy. Our meetup revolves around 4 overarching themes - Ruby for Beginners, Building Inclusive Communities, Weird Ruby, and Veterans of Ruby.
 
