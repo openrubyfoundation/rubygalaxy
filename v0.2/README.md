@@ -1,4 +1,4 @@
-#### Welcome to the first release, v0.1, of RubyGalaxy 👽🖖
+#### Welcome to the first release, v0.2 of RubyGalaxy 👽🖖
 
 - **Release Party**: Feb 28th, 2020 12pm PST on [RubyGalaxy Twitch](https://twitch.tv/therubygalaxy)
 - **Release URL**: rubygalaxy.io/0.2
