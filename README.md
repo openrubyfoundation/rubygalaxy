@@ -1,8 +1,7 @@
 # Ruby Galaxy
-#### Release v.01
-- **Release Party**: Jan 28th, 2021 12pm PST on **TheRubyGalaxy Twitch** 
-- **CFP Closes**: Jan 23rd, 2021 12pm PST
-- **Videos Due**: Jan 27th, 2021 12pm PST
+#### Release v.02
+- **Release Party**: Feb 25th, 2021 11pm PST on **TheRubyGalaxy Twitch** 
+- This version will be, and I quote, a "party time talk show!" hosted by the incredible Jonan Scheffler ([@thejonanshow](https://www.twitch.tv/thejonanshow)) and Rachael Wright-Munn ([@ChaelCodes](https://www.twitch.tv/chaelcodes)) 🎉🎉
 - **Release URL**: [Ruby Galaxy](https://rubygalaxy.io/)
 
 Announcing RubyGalaxy, an online meetup for Rubyists around the world, and if we're lucky - the galaxy. Our meetup revolves around 4 overarching themes - Ruby for Beginners, Building Inclusive Communities, Weird Ruby, and Veterans of Ruby.
