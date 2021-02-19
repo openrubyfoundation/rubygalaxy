@@ -1,6 +1,6 @@
 # Ruby Galaxy
 #### Release v.02
-- **Release Party**: Feb 25th, 2021 11pm PST on **[TheRubyGalaxy](https://www.twitch.tv/therubygalaxy) Twitch channel** 
+- **Release Party**: Feb 25th, 2021 11am PST on **[TheRubyGalaxy](https://www.twitch.tv/therubygalaxy) Twitch channel** 
 - This version will be, and I quote, a "party time talk show!" hosted by the incredible Jonan Scheffler ([@thejonanshow](https://www.twitch.tv/thejonanshow)) and Rachael Wright-Munn ([@ChaelCodes](https://www.twitch.tv/chaelcodes)) 🎉🎉
 - **Release URL**: [Ruby Galaxy](https://rubygalaxy.io/)
 
