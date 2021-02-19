@@ -117,23 +117,25 @@ button {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
-  }
-  .column {
+}
+.column {
 	background-color: rgba(255,255,255,0.05);
 	padding: 20px;
 	border-radius: 12px;
-	margin: 1rem;
+	margin-bottom: 1.5rem;
 	box-shadow: 1px 1px 1px #000;
 	width: 100%;
-  }
-  @media screen and (min-width: 900px) {
+	height: 100%;
+}
+
+.card:last-child {
+	margin-left: 1rem;
+}
+
+@media screen and (min-width: 900px) {
 	.container {
 		flex-direction: column;
-	  }	
-
-	.column{
-		width:100%;
-	}
+	}	
 } 
 
 .sponsors {
