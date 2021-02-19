@@ -107,6 +107,12 @@ button {
 	width: 100%;
   }
 
+.container-flex {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	}
+
 .row {
 	display: flex;
 	flex-wrap: wrap;
