@@ -1,14 +1,65 @@
 ---
 layout: default
 ---
-
 <h2>{{ page.title }}</h2>
-
 {% include page-intro.html %}
 
 {{ content }}
 
 <section>
+  <div class="column">
+    <h5>🎂 v0.1 Launched on Jan 28th, 2021</h5>
+    <h4>Hosted by <a href="https://twitter.com/muydanny">Danny Ramos</a>, <a href="https://twitter.com/learnwdaniel">Daniel Kim</a>, and  <a href="https://twitter.com/mayralunavarro/media">Mayra Navarro</a></h4>
+  </div>
+</section>
+<br>  
+<section>
+  <ul class="container-flex">
+    <li class="column">
+      <img src="/assets/img/matz.jpg"></img>
+      <h5>Photo Credit: <a href="https://twitter.com/evronecom/status/1250019201424687106?s=20" target="_blank">Evrone.com</a></h5>
+      <a href="https://www.youtube.com/watch?v=buhig8jr-Mo" target="_blank">
+        <h3>Beyond Ruby3</h3>
+      </a>
+      <time datetime="{{ post.date }}">
+        <small>
+          by Yukihiro "Matz" Matsumoto
+        </small>
+      </time>
+    </li>
+    <li class="column">
+      <a href="https://www.youtube.com/watch?v=4OWxVtfM1U4" target="_blank">
+      <h3>Debugging Your Brain</h3></a>
+      <small>
+        by Casey Watts</a>
+      </small>
+
+      <a href="https://www.youtube.com/watch?v=6NbtaML8GAg" target="_blank">
+        <h3>Git Rebase</h3>
+      </a>
+      <small>
+        by Brooke Kuhler</a>
+      </small>
+
+      <a href="https://www.youtube.com/watch?v=QpuaX8N19no" target="_blank">
+        <h3>Kaigi on Rails</h3>
+      </a>
+      <small>
+        by Okura Masafumi</a>
+      </small>
+
+      <a href="https://www.youtube.com/watch?v=bO1bKuKclJs" target="_blank">
+        <h3>Playing a Hand with Ruby Pattern Matching</h3>
+      </a>
+      <small>
+        by Brandon Weaver</a>
+      </small>
+    </li>
+  </ul>
+
+</section>
+
+<!-- <section>
   <ul class="twocolumns">
     {% for post in site.posts %}
       <a href="{{ post.url }}">
@@ -25,4 +76,4 @@ layout: default
     {% endfor %}
   </ul>
 
-</section>
+</section> -->
