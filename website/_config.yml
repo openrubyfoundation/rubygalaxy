@@ -22,6 +22,8 @@ url: "https://rubygalaxy.io" # the base hostname & protocol for your site, e.g. 
 
 # Permalink format (/Talks/ is ignored for pages)
 permalink: /Talks/:title
+plugins:
+  - jekyll-seo-tag
 
 # Enable section IDs in frontmatter, useful for identifying current page
 # (used as a hook for styling etc)
