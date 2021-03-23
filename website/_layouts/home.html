@@ -17,26 +17,23 @@ layout: default
    <div class="container">
    <div class="row">
    <div class="column">
-      <h5>🎉 Launching v0.3 on March 25th, 2021 - 19:00 UTC </h5>
-      <h5> This version will be "Ruby off the Rails!" We will have <a href="https://twitter.com/coreyhaines">Corey Haines</a> and <a href="https://twitter.com/amirrajan">Amir Rajan</a> going over fun projects that DONT include Rails🤯</h5> 
+      {% assign event = site.data.events.last %}
+      <h5>🎉 Launching {{event.name}} on {{ event.date }} </h5>
+      <h5>{{ event.description }}</h5>
       <h5>Watch it live on the <a href="https://twitch.tv/therubygalaxy">Ruby Galaxy</a> Twitch channel 🚀 </h5>
-      <h4>Hosted by <a href="https://twitter.com/muydanny">Danny Ramos</a> and <a href="https://twitter.com/ChaelCodes">Rachael Wright-Munn</a></h4>
-   </div>
+      {% include host_header.html hosts=event.hosts %}
+</div>
 </section>
 
 <div class="container-flex">
+   {% for host_key in event.hosts %}
    <div class="column card">
-      <img src="/assets/img/Danny_headshot.png"></img>
-      <br>
-      <h5><a href="https://www.linkedin.com/in/danny-ramos-j/">LinkedIn</a> | <a href="https://twitter.com/muydanny">Twitter</a> | <a href="https://twitch.tv/muydanny">Twitch</a> | <a href="https://github.com/muydanny">GitHub</a> | <a href="https://developer.newrelic.com">Work</a></h5>
+      {% assign host_card = site.data.hosts[host_key] %}
+      <img src="{{host_card.headshot}}"></img>
+      <h5><a href="{{host_card.linkedin}}">LinkedIn</a> | <a href="{{host_card.twitter}}">Twitter</a> | <a href="{{host.twitch}}">Twitch</a> | <a href="{{host_card.github}}">GitHub</a> | <a href="https://developer.newrelic.com">Work</a></h5>
    </div>
-   <div class="column card">
-      <img src="/assets/img/Rachael_headshot.jpg"></img>
-      <br>
-      <h5><a href="https://github.com/ChaelCodes">GitHub</a> | <a href="https://twitter.com/ChaelCodes">Twitter</a> | <a href="https://twitch.tv/ChaelCodes">Twitch</a> | <a href="https://chael.codes">Personal</a> </h5>
-   </div>
+   {% endfor %}
 </div>
-<br>
 
 <section>
    <h4>Brought to you by</h4>
@@ -56,14 +53,3 @@ layout: default
       </div>
    </div>
 </section>
-
-<!-- <section>
-   <h3>Recent Talks</h3>
-   <ul>
-     {% for post in site.posts limit:3 %}
-       <li>
-         <a href="{{ post.url }}">{{ post.title }}</a>
-       </li>
-     {% endfor %}
-   </ul>
-   </section> -->

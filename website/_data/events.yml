@@ -1,0 +1,33 @@
+- dot_one:
+  date: Jan 28th, 2021
+  hosts:
+    daniel_kim
+    danny_ramos
+    mayra_navarro
+  image: /assets/img/matz.jpg
+  image_credit: Evrone.com
+  image_credit_link: https://twitter.com/evronecom/status/1250019201424687106?s=20
+  name: 🎂 v0.1
+  event_text: Beyond Ruby 3
+  subtitle: by Yukihiro "Matz" Matsumoto
+  talks:
+    - name: Debugging Your Brain
+      author: casey_watts
+      recording: https://www.youtube.com/watch?v=buhig8jr-Mo
+- dot_two:
+  hosts:
+    jonan_scheffler
+    rachael_wright_munn
+  talks:
+    - name: Open-Source Contributing
+      author: aaron_patterson
+- dot_three:
+  date: March 25th, 2021 19:00 UTC
+  description: This version will be all about "Ruby off the Rails"!
+  hosts:
+    - danny_ramos
+    - rachael_wright_munn
+  guests:
+    - corey_haines
+    - amir_rajan
+  name: v0.3
