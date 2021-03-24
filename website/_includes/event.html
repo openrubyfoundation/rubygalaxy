@@ -1,0 +1,51 @@
+<section>
+  <div class="column">
+    <h5>{{include.event.name}} Launched on {{include.event.date}}</h5>
+    {% include host_header.html %}
+  </div>
+</section>
+<br>  
+<section>
+  <ul class="container-flex">
+    <li class="column">
+      <img src="{{include.event.image}}"></img>
+      {% if include.event.image_credit %}
+      <h5>Photo Credit: <a href="{{include.event.image_credit_link}}" target="_blank">{{include.event.image_credit}}</a></h5>
+      {% endif %}
+      <a href="{{include.event.recording}}" target="_blank">
+        <h3>{{include.event.event_text}}</h3>
+      </a>
+      <small>
+        {{include.event.subtitle}}
+      </small>
+    </li>
+    <li class="column">
+      <a href="https://www.youtube.com/watch?v=4OWxVtfM1U4" target="_blank">
+      <h3>Debugging Your Brain</h3></a>
+      <small>
+        by Casey Watts</a>
+      </small>
+
+      <a href="https://www.youtube.com/watch?v=6NbtaML8GAg" target="_blank">
+        <h3>Git Rebase</h3>
+      </a>
+      <small>
+        by Brooke Kuhlmann</a>
+      </small>
+
+      <a href="https://www.youtube.com/watch?v=QpuaX8N19no" target="_blank">
+        <h3>Kaigi on Rails</h3>
+      </a>
+      <small>
+        by Okura Masafumi</a>
+      </small>
+
+      <a href="https://www.youtube.com/watch?v=bO1bKuKclJs" target="_blank">
+        <h3>Playing a Hand with Ruby Pattern Matching</h3>
+      </a>
+      <small>
+        by Brandon Weaver</a>
+      </small>
+    </li>
+  </ul>
+</section>
