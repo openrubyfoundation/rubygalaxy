@@ -4,10 +4,20 @@
   {% if page.section == "home" %}
     <title>{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
+    <meta name="twitter:title" content="{{ site.title }}"/>
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta name="twitter:description" content="{{ site.description }}"/>
+    <meta property="og:description" content="{{ site.description }}" />
   {% else %}
     <title>{{ page.title }}</title>
+    <meta name="twitter:title" content="{{site.title}} - {{ page.title }}"/>
+    <meta property="og:title" content="{{site.title}} - {{ page.title }}" />
     {% if page.meta_description %}
+      <meta name="twitter:description" content="{{ page.meta_description }}"/>
       <meta name="description" content="{{ page.meta_description }}">
+    {% else %}
+      <meta name="twitter:description" content="{{ site.description }}"/>
+      <meta property="og:description" content="{{ site.description }}" />
     {% endif %}
   {% endif %}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
@@ -15,6 +25,13 @@
     {% include analytics.html %}
   {% endif %}
   <link rel="shortcut icon" type="image/png" href="{{ "/assets/img/favicon.png" | relative_url }}">
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@therubygalaxy"/>
+  <meta name="twitter:creator" content="@therubygalaxy"/>
+  <meta name="twitter:domain" content="rubygalaxy.io"/>
+  <meta property="og:image" content="{{ site.url }}/assets/img/twitter-card.jpg">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url }}" />
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <style>
     a { text-decoration: none; }
