@@ -106,6 +106,17 @@ main {
   }
 }
 
+#header-logo {
+  max-height: 40px;
+  width: auto;
+}
+
+#logo {
+  height: 60px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
 // reset breaking fallbacks (e.g. widths) if CSS Grid is supported
 // float, inline-block, table properties are already ignored by CSS Grid
 @supports (display: grid) {
