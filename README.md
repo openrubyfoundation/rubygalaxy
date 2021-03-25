@@ -1,10 +1,10 @@
 # Ruby Galaxy
-#### Release v.01
-- **Release Party**: Jan 28th, 2021 12pm PST on **TheRubyGalaxy Twitch** 
-- **CFP Closes**: Jan 23rd, 2021 12pm PST
-- **Release URL**: [Ruby Galaxy](rubygalaxy.io)
+#### Release v.03
+- **Release Party**: March 25th, 2021 12pm PST on **[TheRubyGalaxy](https://www.twitch.tv/therubygalaxy) Twitch channel** 
+- This version will be "Ruby off the Rails!" hosted by Rachael Wright-Munn ([@ChaelCodes](https://www.twitch.tv/chaelcodes)) and Danny Ramos ([@muydanny](https://www.twitch.tv/muydanny)) 🎉🎉
+- **Release URL**: [Ruby Galaxy](https://rubygalaxy.io/)
 
-Announcing RubyGalaxy, an online meetup for Rubyist around the world, and if we're lucky - the galaxy. Our meetup revolves around 4 overarching themes - Ruby for Beginners, Building Inclusive Communities, Weird Ruby, and Veterans of Ruby.
+Announcing RubyGalaxy, an online meetup for Rubyists around the world, and if we're lucky - the galaxy. Our meetup revolves around 4 overarching themes - Ruby for Beginners, Building Inclusive Communities, Weird Ruby, and Veterans of Ruby.
 
 ### How to Submit a Talk
 - Fork this repository
