@@ -18,7 +18,7 @@ layout: default
    <div class="row">
    <div class="column">
       {% assign event = site.data.events.last %}
-      <h4>🎉 Launching {{event.name}} on {{ event.date }} </h4>
+      <h4>🎉 Launching {{ event.name }} on {{ event.date }} </h4>
       <h5>{{ event.description }}</h5>
       <h5>Watch it live on the <a href="https://twitch.tv/therubygalaxy">Ruby Galaxy</a> Twitch channel 🚀 </h5>
       {% include host_header.html hosts=event.hosts %}
