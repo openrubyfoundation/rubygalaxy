@@ -1,0 +1,43 @@
+# Guest List
+
+aaron_patterson:
+  name: Aaron Patterson
+  description: Ruby on Rails author
+  twitter: https://twitter.com/tenderlove
+
+amir_rajan:
+  name: Amir Rajan
+  twitter: http://twitter.com/amirrajan
+
+brooke_kuhlmann:
+  name: Brooke Kuhlmann
+  twitter: https://twitter.com/bkuhlmann
+
+casey_watts:
+  name: Casey Watts
+  twitter: https://twitter.com/heycaseywattsup
+
+christina_gorton:
+  name: Christina Gorton
+  twitter: https://twitter.com/coffeecraftcode
+  description: Open Source Community Manager at Forem
+
+corey_haines:
+  name: Corey Haines
+  twitter: http://twitter.com/coreyhaines
+
+matz:
+  name: Yukihiro "Matz" Matsumoto
+  headshot: /assets/img/matz.jpg
+  twitter: https://twitter.com/yukihiro_matz
+
+mike_perham:
+  name: Mike Perham
+  twitter: https://twitter.com/getajobmike
+  description: Author of Sidekiq and Faktory
+
+okura_masafumi:
+  name: Okura Masafumi
+  twitter: https://twitter.com/okuramasafumi
+
+

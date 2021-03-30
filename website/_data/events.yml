@@ -1,0 +1,66 @@
+- dot_one:
+  date: Jan 28th, 2021
+  hosts:
+    - daniel_kim
+    - danny_ramos
+    - mayra_navarro
+  image: /assets/img/matz.jpg
+  image_credit: Evrone.com
+  image_credit_link: https://twitter.com/evronecom/status/1250019201424687106?s=20
+  name: 🎂 v0.1
+  event_text: Beyond Ruby 3
+  subtitle: by Yukihiro "Matz" Matsumoto
+  talks:
+    - name: Debugging Your Brain
+      author: Casey Watts
+      recording: https://www.youtube.com/watch?v=buhig8jr-Mo
+    - name: Git Rebase
+      author: Brooke Kuhlmann
+      recording: https://www.youtube.com/watch?v=6NbtaML8GAg
+    - name: Kaigi on Rails
+      author: Okura Masafumi
+      recording: https://www.youtube.com/watch?v=QpuaX8N19no
+    - name: Playing a Hand with Ruby Pattern Matching
+      author: Brandon Weaver
+      recording: https://www.youtube.com/watch?v=bO1bKuKclJs
+- dot_two:
+  date: Feb 25th, 2021
+  event_text: Interviews with OSS Maintainers
+  hosts:
+    - jonan_scheffler
+    - rachael_wright_munn
+  image: /assets/img/feb21social.jpg
+  name: ✨ v0.2
+  recording: https://www.twitch.tv/videos/928356075
+  talks:
+    - name: Open-Source Contributing
+      author: Aaron Patterson
+      recording: https://twitter.com/tenderlove
+    - name: Sidekiq and Faktory
+      author: Mike Perham
+      recording: https://twitter.com/getajobmike
+    - name: Being an Open Source Community Manager
+      author: Christina Gorton
+      recording: https://twitter.com/coffeecraftcode
+- dot_three:
+  date: March 25th, 2021 19:00 UTC
+  description: This version will be all about "Ruby off the Rails"!
+  hosts:
+    - danny_ramos
+    - rachael_wright_munn
+  guests:
+    - corey_haines
+    - amir_rajan
+  name: 🛸 v0.3
+  talks:
+    - name: Automate w/ Ruby
+      author: Corey Haines
+      recording: https://twitter.com/coreyhaines
+    - name: DragonRuby game engine
+      author: Amir Rajan
+      recording: https://twitter.com/amirrajan
+- dot_four:
+  name: v0.4
+  date: April 29th, 2021 19:00 UTC
+  description: CFP Open now! <a href="https://www.papercall.io/ruby-galaxy">Apply today!</a>
+  upcoming: true

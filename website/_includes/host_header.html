@@ -1,0 +1,10 @@
+<h5>
+{% if include.hosts %}
+    Hosted by{% for host_key in include.hosts %}
+        {% if host_key == include.hosts.last %}and {% endif %}
+        {% assign host = site.data.hosts[host_key] %}
+        <a href="{{host.twitter}}">{{host.name}}</a>
+        {% unless host_key == include.hosts.last %}, {% endunless %}
+    {% endfor %}
+{% endif %}
+</h5>

@@ -1,0 +1,31 @@
+<section>
+  <div class="column">
+    <h5>{{include.event.name}} Launched on {{include.event.date}}</h5>
+    {% include host_header.html hosts=include.event.hosts %}
+  </div>
+</section>
+<br> 
+<section>
+  <ul class="container-flex">
+    <li class="column">
+      <img src="{{include.event.image}}"></img>
+      {% if include.event.image_credit %}
+      <h5>Photo Credit: <a href="{{include.event.image_credit_link}}" target="_blank">{{include.event.image_credit}}</a></h5>
+      {% endif %}
+      <a href="{{include.event.recording}}" target="_blank">
+        <h3>{{include.event.event_text}}</h3>
+      </a>
+      <small>
+        {{include.event.subtitle}}
+      </small>
+    </li>
+    <li class="column">
+      {% for talk in include.event.talks %}
+        <a href="{{talk.recording}}" target="_blank">
+        <h3>{{talk.name}}</h3></a>
+        <small>
+          by {{talk.author}}</a>
+        </small>
+      {% endfor %}
+  </ul>
+</section>
