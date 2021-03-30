@@ -1,13 +1,13 @@
 ---
 layout: default
 ---
-  <img src="/assets/img/logo.png" style="height: 60px; width: auto; margin-bottom: 20px;"></img>
+  <img src="/assets/img/logo.png" alt="RubyGalaxy logo" style="height: 60px; width: auto; margin-bottom: 20px;"></img>
   {% include page-intro.html %}
 
   {{ content }}
   <h3>Interested in talking? Take a look at <a href="https://www.papercall.io/ruby-galaxy">our CFP!</a></h3>
   <p>We are always interested in talks of all sorts, whether you are an experienced presenter, or are looking for a great place to give your first talk ever.</p>
-  <h5> Join our mailing list for event updates! </h5>
+  <h4> Join our mailing list for event updates! </h4>
   <form name="contact" method="POST" netlify style="margin-bottom:56px">
      <input type="email" name="email" id="email" autocomplete="email" placeholder="Your email address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
      <button type="submit" name="submit">Register Now</button>
@@ -18,7 +18,7 @@ layout: default
    <div class="row">
    <div class="column">
       {% assign event = site.data.events.last %}
-      <h5>🎉 Launching {{event.name}} on {{ event.date }} </h5>
+      <h4>🎉 Launching {{event.name}} on {{ event.date }} </h4>
       <h5>{{ event.description }}</h5>
       <h5>Watch it live on the <a href="https://twitch.tv/therubygalaxy">Ruby Galaxy</a> Twitch channel 🚀 </h5>
       {% include host_header.html hosts=event.hosts %}
@@ -29,7 +29,7 @@ layout: default
    {% for host_key in event.hosts %}
    <div class="column card">
       {% assign host_card = site.data.hosts[host_key] %}
-      <img src="{{host_card.headshot}}"></img>
+      <img alt="{{host_card.name}}" src="{{host_card.headshot}}"></img>
       <h5><a href="{{host_card.linkedin}}">LinkedIn</a> | <a href="{{host_card.twitter}}">Twitter</a> | <a href="{{host.twitch}}">Twitch</a> | <a href="{{host_card.github}}">GitHub</a> | <a href="https://developer.newrelic.com">Work</a></h5>
    </div>
    {% endfor %}
@@ -40,16 +40,16 @@ layout: default
    <br>
    <div class="sponsors">
       <div class="sponsorlogo">
-         <a href="https://www.newrelic.com/?utm_source=rubygalaxyio&utm_medium=sponsorship&utm_campaign=rubygalaxy"><img src="assets/NR.png" /></a>
+         <a href="https://www.newrelic.com/?utm_source=rubygalaxyio&utm_medium=sponsorship&utm_campaign=rubygalaxy"><img alt="New Relic logo" src="assets/NR.png" /></a>
       </div>
       <div class="sponsorlogo">
-         <a href="https://dev.to/?utm_source=rubygalaxyio&utm_medium=sponsorship&utm_campaign=rubygalaxy"><img src="assets/dev.png" /></a>
+         <a href="https://dev.to/?utm_source=rubygalaxyio&utm_medium=sponsorship&utm_campaign=rubygalaxy"><img alt="Dev.To logo" src="assets/dev.png" /></a>
       </div>
       <div class="sponsorlogo">
-         <a href="https://github.com/?utm_source=rubygalaxyio&utm_medium=sponsorship&utm_campaign=rubygalaxy"><img src="assets/github.png" /></a>
+         <a href="https://github.com/?utm_source=rubygalaxyio&utm_medium=sponsorship&utm_campaign=rubygalaxy"><img alt="GitHub logo" src="assets/github.png" /></a>
       </div>
       <div class="sponsorlogo">
-         <a href="https://forem.com/?utm_source=rubygalaxyio&utm_medium=sponsorship&utm_campaign=rubygalaxy"><img src="assets/forem.png" /></a>
+         <a href="https://forem.com/?utm_source=rubygalaxyio&utm_medium=sponsorship&utm_campaign=rubygalaxy"><img alt="Forem logo" src="assets/forem.png" /></a>
       </div>
    </div>
 </section>
