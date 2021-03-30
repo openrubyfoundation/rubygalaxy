@@ -1,6 +1,10 @@
-<h5>Hosted by{% for host_key in include.hosts %}
-    {% if host_key == event.hosts.last %}and {% endif %}
-    {% assign host = site.data.hosts[host_key] %}
-    <a href="{{host.twitter}}">{{host.name}}</a>
-    {% unless host_key == event.hosts.last %}, {% endunless %}
-{% endfor %}</h5>
+<h5>
+{% if include.hosts.empty? %}
+    Hosted by{% for host_key in include.hosts %}
+        {% if host_key == event.hosts.last %}and {% endif %}
+        {% assign host = site.data.hosts[host_key] %}
+        <a href="{{host.twitter}}">{{host.name}}</a>
+        {% unless host_key == event.hosts.last %}, {% endunless %}
+    {% endfor %}
+{% endif %}
+</h5>
