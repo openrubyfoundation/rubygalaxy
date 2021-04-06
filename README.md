@@ -7,11 +7,8 @@
 Announcing RubyGalaxy, an online meetup for Rubyists around the world, and if we're lucky - the galaxy. Our meetup revolves around 4 overarching themes - Ruby for Beginners, Building Inclusive Communities, Weird Ruby, and Veterans of Ruby.
 
 ### How to Submit a Talk
-- Fork this repository
-- Create a Pull Request to this repository with a markdown file with your talk title
-(ex. Trapped_in_the_Jekyll-Space_Continuum_DannyRamos). 
-- Our review committee will add comments to the pull request. Please respond to those
-- If your pull request is merged, we will contact you directly and send you some sick RubyGalaxy swag. It will be out-of-this-world. I promise.
+
+Please review our submission process on [Paper Call](https://www.papercall.io/ruby-galaxy) ✨
 
 ***We invite all talks! These tracks are more suggestions or ideas :)***
 
