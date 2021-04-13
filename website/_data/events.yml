@@ -50,7 +50,8 @@
       author_twitter: https://twitter.com/coffeecraftcode
       recording: https://www.youtube.com/watch?v=xtJsvR_Lk98
 - dot_three:
-  date: March 25th, 2021 19:00 UTC
+  date: March 25th, 2021 
+  event_text: Ruby off the Rails
   description: This version will be all about "Ruby off the Rails"!
   hosts:
     - danny_ramos
