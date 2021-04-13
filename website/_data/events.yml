@@ -4,24 +4,28 @@
     - daniel_kim
     - danny_ramos
     - mayra_navarro
-  image: /assets/img/matz.jpg
-  image_credit: Evrone.com
-  image_credit_link: https://twitter.com/evronecom/status/1250019201424687106?s=20
   name: 🎂 v0.1
-  event_text: Beyond Ruby 3
-  subtitle: by Yukihiro "Matz" Matsumoto
+  event_text: The first Ruby Galaxy
   talks:
+    - name: Beyond Ruby3
+      author: Yukihiro "Matz" Matsumoto
+      author_twitter: https://twitter.com/yukihiro_matz
+      recording: https://www.youtube.com/watch?v=buhig8jr-Mo
     - name: Debugging Your Brain
       author: Casey Watts
-      recording: https://www.youtube.com/watch?v=buhig8jr-Mo
+      author_twitter: https://twitter.com/heycaseywattsup
+      recording: https://www.youtube.com/watch?v=4OWxVtfM1U4
     - name: Git Rebase
       author: Brooke Kuhlmann
+      author_twitter: https://twitter.com/bkuhlmann
       recording: https://www.youtube.com/watch?v=6NbtaML8GAg
     - name: Kaigi on Rails
       author: Okura Masafumi
+      author_twitter: https://twitter.com/okuramasafumi
       recording: https://www.youtube.com/watch?v=QpuaX8N19no
     - name: Playing a Hand with Ruby Pattern Matching
       author: Brandon Weaver
+      author_twitter: https://twitter.com/keystonelemur
       recording: https://www.youtube.com/watch?v=bO1bKuKclJs
 - dot_two:
   date: Feb 25th, 2021
@@ -35,13 +39,16 @@
   talks:
     - name: Open-Source Contributing
       author: Aaron Patterson
-      recording: https://twitter.com/tenderlove
+      author_twitter: https://twitter.com/tenderlove
+      recording: https://www.youtube.com/watch?v=58N38JgpivQ
     - name: Sidekiq and Faktory
       author: Mike Perham
-      recording: https://twitter.com/getajobmike
+      author_twitter: https://twitter.com/getajobmike
+      recording: https://www.youtube.com/watch?v=N5isXYght4Q
     - name: Being an Open Source Community Manager
       author: Christina Gorton
-      recording: https://twitter.com/coffeecraftcode
+      author_twitter: https://twitter.com/coffeecraftcode
+      recording: https://www.youtube.com/watch?v=xtJsvR_Lk98
 - dot_three:
   date: March 25th, 2021 19:00 UTC
   description: This version will be all about "Ruby off the Rails"!
@@ -53,12 +60,12 @@
     - amir_rajan
   name: 🛸 v0.3
   talks:
-    - name: Automate w/ Ruby
+    - name: Automate with Ruby
       author: Corey Haines
-      recording: https://twitter.com/coreyhaines
-    - name: DragonRuby game engine
+      author_twitter: https://twitter.com/coreyhaines
+    - name: DragonRuby Game Engine
       author: Amir Rajan
-      recording: https://twitter.com/amirrajan
+      author_twitter: https://twitter.com/amirrajan
 - dot_four:
   name: v0.4
   date: April 29th, 2021 19:00 UTC
