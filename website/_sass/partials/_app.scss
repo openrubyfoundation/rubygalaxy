@@ -15,13 +15,13 @@ body {
     [full-start] minmax(1rem, 1fr)
     [main-start] minmax(0, 52rem) [main-end]
     minmax(1rem, 1fr) [full-end];
-    background: rgb(14,23,42);
+    background: #0a101d;
+    // background: rgb(14,23,42) original background;
 }
 
 // by default, make any new children of body to span the full track
 body > * {
   grid-column: full;
-  padding: 2rem 1rem;
 }
 
 // header, the first grid row
@@ -29,7 +29,7 @@ body > * {
 header {
   grid-column: full;
   display: grid;
-  background-color: #0e172a;
+  background-color: #0a101d;
   padding: 2rem;
   @media screen and (min-width: $screen-sm-min) {
     grid-template-columns: 1fr auto;
