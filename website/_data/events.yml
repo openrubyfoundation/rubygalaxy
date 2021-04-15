@@ -64,9 +64,11 @@
     - name: Automate with Ruby
       author: Corey Haines
       author_twitter: https://twitter.com/coreyhaines
+      recording: https://www.youtube.com/watch?v=bj-Wtk40gE8
     - name: DragonRuby Game Engine
       author: Amir Rajan
       author_twitter: https://twitter.com/amirrajan
+      recording: https://www.youtube.com/watch?v=4_dqKoRUtDw
 - dot_four:
   name: v0.4
   date: April 29th, 2021 19:00 UTC
