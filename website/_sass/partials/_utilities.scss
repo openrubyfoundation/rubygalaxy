@@ -105,19 +105,24 @@ button {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-  }
+}
 
 .container-flex {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	}
+}
 
 .row {
 	display: flex;
-	flex-wrap: wrap;
 	width: 100%;
+	flex-direction: row;
+	
+	& > * {
+		margin: 1em;
+	}
 }
+
 .column {
 	background-color: rgba(255,255,255,0.05);
 	padding: 20px;
