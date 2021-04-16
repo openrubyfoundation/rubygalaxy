@@ -1,29 +1,40 @@
 ---
 layout: default
 ---
-  <img src="/assets/img/logo.png" alt="RubyGalaxy logo" style="height: 60px; width: auto; margin-bottom: 20px;"></img>
-  {% include page-intro.html %}
+<img src="/assets/img/logo.png" alt="RubyGalaxy logo" style="height: 60px; width: auto; margin-bottom: 20px;"></img>
+{% include page-intro.html %}
 
-  {{ content }}
-  <h3>Interested in talking? Take a look at <a href="https://www.papercall.io/ruby-galaxy">our CFP!</a></h3>
-  <p>We are always interested in talks of all sorts, whether you are an experienced presenter, or are looking for a great place to give your first talk ever.</p>
-  <h4> Join our mailing list for event updates! </h4>
-  <form name="contact" method="POST" netlify style="margin-bottom:56px">
-     <input type="email" name="email" id="email" autocomplete="email" placeholder="Your email address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
-     <button type="submit" name="submit">Register Now</button>
-  </form>  
-</section>
+{{ content }}
+
+<h4> Join our mailing list for event updates! </h4>
+<form name="contact" method="POST" netlify style="margin-bottom:56px">
+   <input type="email" name="email" id="email" autocomplete="email" placeholder="Your email address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
+   <button type="submit" name="submit">Register Now</button>
+</form> 
+
 <section>
    <div class="container">
    <div class="row">
    <div class="column">
       {% assign event = site.data.events.last %}
-      <h4>🎉 Launching {{ event.name }} on {{ event.date }} </h4>
+      <h3>🎉 Launching {{ event.name }} on {{ event.date }} </h3>
+      <h4>Watch it live on the <a href="https://twitch.tv/therubygalaxy">Ruby Galaxy</a> Twitch channel 🚀 </h4>
       <h5>{{ event.description }}</h5>
-      <h5>Watch it live on the <a href="https://twitch.tv/therubygalaxy">Ruby Galaxy</a> Twitch channel 🚀 </h5>
       {% include host_header.html hosts=event.hosts %}
-</div>
+   </div>
+   <div class="column">
+      {% assign event = site.data.events.last %}
+      <h3>Talks for {{ event.name }}</h3>
+      {% for talk in event.talks %}
+         <h4>{{ talk.name }}</h4>
+         <p>{{ talk.abstract }}</p>
+         <small>{{ talk.author }} <a href="{{ talk.author_twitter }}" style="color:#f93434"><img src="/assets/img/twitter-brands.svg" style="height: 15px; width: 30px; display: inline-block; fill:#f93434" /></a></small>
+      {% endfor %}
+   </div>
 </section>
+
+<h3>Interested in talking? Take a look at <a href="https://www.papercall.io/ruby-galaxy">our CFP!</a></h3>
+<p>We are always interested in talks of all sorts, whether you are an experienced presenter, or are looking for a great place to give your first talk ever.</p>
 
 <div class="container-flex">
    {% for host_key in event.hosts %}
@@ -34,7 +45,7 @@ layout: default
    </div>
    {% endfor %}
 </div>
-
+<br>
 <section>
    <h4>Brought to you by</h4>
    <br>
