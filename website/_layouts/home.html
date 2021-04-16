@@ -17,19 +17,20 @@ layout: default
       <div class="column">
          {% assign event = site.data.events.last %}
          <h3>🎉 Launching {{ event.name }} on {{ event.date }} </h3>
-         <h4>Watch it live on the <a href="https://twitch.tv/therubygalaxy">Ruby Galaxy</a> Twitch channel 🚀 </h4>
-         <h5>{{ event.description }}</h5>
+         <h4>Watch it live on the <a href="https://twitch.tv/therubygalaxy">Ruby Galaxy</a> Twitch channel </h4>
          {% include host_header.html hosts=event.hosts %}
+         <h5>{{ event.description }}</h5>
       </div>
       <div class="column">
          {% assign event = site.data.events.last %}
-         <h3>Talks for {{ event.name }}</h3>
+         <h3>Talks for {{ event.event_text }}</h3>
+         <br>
          {% for talk in event.talks %}        
-            <div class="column">
-               <img alt="{{talk.author}}" src="{{ talk.author_headshot }}"></img>        
+            <div class="column">        
                <h4>{{ talk.name }}</h4> 
-               <p>{{ talk.abstract }}</p>
-               <small>{{ talk.author }} <a href="{{ talk.author_twitter }}" style="color:#f93434"><img src="/assets/img/twitter-brands.svg" style="height: 15px; width: 30px; display: inline-block; fill:#f93434" /></a></small>
+               <p>{{ talk.abstract }}</p><br>
+               <small>{{ talk.author }}</small> <a href="{{ talk.author_twitter }}" style="color:#f93434"><img src="/assets/img/twitter-brands.svg" style="height: 15px; width: 30px; display: inline-block; fill:#f93434" /></a><br>
+               <small>{{ talk.author_bio }}</small><br>
             </div> 
          {% endfor %}
       </div>
@@ -39,7 +40,8 @@ layout: default
 <h3>Interested in talking? Take a look at <a href="https://www.papercall.io/ruby-galaxy">our CFP!</a></h3>
 <p>We are always interested in talks of all sorts, whether you are an experienced presenter, or are looking for a great place to give your first talk ever.</p>
 
-<div class="container-flex">
+<!-- Host Cards with Photos -->
+<!-- <div class="container-flex">
    {% for host_key in event.hosts %}
    <div class="column card">
       {% assign host_card = site.data.hosts[host_key] %}
@@ -47,7 +49,7 @@ layout: default
       <h5><a href="{{host_card.linkedin}}">LinkedIn</a> | <a href="{{host_card.twitter}}">Twitter</a> | <a href="{{host.twitch}}">Twitch</a> | <a href="{{host_card.github}}">GitHub</a> | <a href="https://developer.newrelic.com">Work</a></h5>
    </div>
    {% endfor %}
-</div>
+</div> -->
 <br>
 <section>
    <h4>Brought to you by</h4>
