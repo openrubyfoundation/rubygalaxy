@@ -9,6 +9,11 @@ amir_rajan:
   name: Amir Rajan
   twitter: http://twitter.com/amirrajan
 
+brian_douglas: 
+  name: Brian Douglas
+  headshot: /assets/img/bdougie.png
+  twitter: http://twitter.com/bdougieYO
+
 brooke_kuhlmann:
   name: Brooke Kuhlmann
   twitter: https://twitter.com/bkuhlmann
@@ -26,6 +31,16 @@ corey_haines:
   name: Corey Haines
   twitter: http://twitter.com/coreyhaines
 
+dan_moore:
+  name: Dan Moore
+  headshot: /assets/img/dan_moore.png
+  twitter: https://twitter.com/mooreds
+
+joel_hawksley:
+  name: joel_hawksley
+  headshot: /assets/img/joel_h.png
+  twitter: https://hawksley.org/
+
 matz:
   name: Yukihiro "Matz" Matsumoto
   headshot: /assets/img/matz.jpg
@@ -39,5 +54,6 @@ mike_perham:
 okura_masafumi:
   name: Okura Masafumi
   twitter: https://twitter.com/okuramasafumi
+
 
 
