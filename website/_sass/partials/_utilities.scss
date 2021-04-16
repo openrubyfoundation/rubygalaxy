@@ -105,19 +105,24 @@ button {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-  }
+}
 
 .container-flex {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	}
+}
 
 .row {
 	display: flex;
-	flex-wrap: wrap;
 	width: 100%;
+	flex-direction: row;
+	
+	& > * {
+		margin: 1em;
+	}
 }
+
 .column {
 	background-color: rgba(255,255,255,0.05);
 	padding: 20px;
@@ -144,10 +149,10 @@ button {
 }
 .sponsorlogo {
 	width:100px;
-	opacity: 0.7;
 }
 
 .sponsorlogo:hover {
-	width:100px;
-	opacity: 1.0;
+	opacity: 0.5;
+	transform: scale(1.05);
+	transition: all .3s ease-in-out;
 }
