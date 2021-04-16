@@ -14,22 +14,25 @@ layout: default
 
 <section>
    <div class="container">
-   <div class="row">
-   <div class="column">
-      {% assign event = site.data.events.last %}
-      <h3>🎉 Launching {{ event.name }} on {{ event.date }} </h3>
-      <h4>Watch it live on the <a href="https://twitch.tv/therubygalaxy">Ruby Galaxy</a> Twitch channel 🚀 </h4>
-      <h5>{{ event.description }}</h5>
-      {% include host_header.html hosts=event.hosts %}
-   </div>
-   <div class="column">
-      {% assign event = site.data.events.last %}
-      <h3>Talks for {{ event.name }}</h3>
-      {% for talk in event.talks %}
-         <h4>{{ talk.name }}</h4>
-         <p>{{ talk.abstract }}</p>
-         <small>{{ talk.author }} <a href="{{ talk.author_twitter }}" style="color:#f93434"><img src="/assets/img/twitter-brands.svg" style="height: 15px; width: 30px; display: inline-block; fill:#f93434" /></a></small>
-      {% endfor %}
+      <div class="column">
+         {% assign event = site.data.events.last %}
+         <h3>🎉 Launching {{ event.name }} on {{ event.date }} </h3>
+         <h4>Watch it live on the <a href="https://twitch.tv/therubygalaxy">Ruby Galaxy</a> Twitch channel 🚀 </h4>
+         <h5>{{ event.description }}</h5>
+         {% include host_header.html hosts=event.hosts %}
+      </div>
+      <div class="column">
+         {% assign event = site.data.events.last %}
+         <h3>Talks for {{ event.name }}</h3>
+         {% for talk in event.talks %}        
+            <div class="column">
+               <img alt="{{talk.author}}" src="{{ talk.author_headshot }}"></img>        
+               <h4>{{ talk.name }}</h4> 
+               <p>{{ talk.abstract }}</p>
+               <small>{{ talk.author }} <a href="{{ talk.author_twitter }}" style="color:#f93434"><img src="/assets/img/twitter-brands.svg" style="height: 15px; width: 30px; display: inline-block; fill:#f93434" /></a></small>
+            </div> 
+         {% endfor %}
+      </div>
    </div>
 </section>
 
