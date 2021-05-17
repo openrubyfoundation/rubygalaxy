@@ -21,20 +21,21 @@ layout: default
          {% include host_header.html hosts=event.hosts %}
          <h5>{{ event.description }}</h5>
       </div>
-      <!-- For future speaker bios and talk abstracts -->
-      <!-- <div class="column">
-         {% assign event = site.data.events.last %}
-         <h3>Talks for {{ event.event_text }}</h3>
-         <br>
-         {% for talk in event.talks %}        
-            <div class="column">        
-               <h4>{{ talk.name }}</h4> 
-               <p>{{ talk.abstract }}</p><br>
-               <small>{{ talk.author }}</small> <a href="{{ talk.author_twitter }}" style="color:#f93434"><img src="/assets/img/twitter-brands.svg" style="height: 15px; width: 30px; display: inline-block; fill:#f93434" /></a><br>
-               <small>{{ talk.author_bio }}</small><br>
-            </div> 
-         {% endfor %}
-      </div> -->
+      <!-- For speaker bios and talk abstracts -->
+      {% if event.talks.count > 0 %}
+         <div class="column"></div>
+            {% assign event = site.data.events.last %}
+            <h3>Talks for {{ event.event_text }}</h3>
+            {% for talk in event.talks %}        
+               <div class="column">        
+                  <h4>{{ talk.name }}</h4> 
+                  <p>{{ talk.abstract }}</p><br>
+                  <small>{{ talk.author }}</small> <a href="{{ talk.author_twitter }}" style="color:#f93434"><img src="/assets/img/twitter-brands.svg" style="height: 15px; width: 30px; display: inline-block; fill:#f93434" /></a><br>
+                  <small>{{ talk.author_bio }}</small><br>
+               </div> 
+            {% endfor %}
+         </div>
+      {% endif %}
    </div>
 </section>
 
