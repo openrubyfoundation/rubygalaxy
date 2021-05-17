@@ -21,7 +21,8 @@ layout: default
          {% include host_header.html hosts=event.hosts %}
          <h5>{{ event.description }}</h5>
       </div>
-      <div class="column">
+      <!-- For future speaker bios and talk abstracts -->
+      <!-- <div class="column">
          {% assign event = site.data.events.last %}
          <h3>Talks for {{ event.event_text }}</h3>
          <br>
@@ -33,7 +34,7 @@ layout: default
                <small>{{ talk.author_bio }}</small><br>
             </div> 
          {% endfor %}
-      </div>
+      </div> -->
    </div>
 </section>
 
