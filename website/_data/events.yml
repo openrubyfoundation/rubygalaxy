@@ -100,10 +100,10 @@
       author_bio: Dan is a developer of nearly 20 years. He's supported business critical applications as a team member, a contractor and a manager across a number of domains including real estate, horse racing and oil and gas. He's participated on five startups as a co-founder, employee or contractor (Homesphones, Formatdynamics, Vu, Katasi, The Food Corridor). He's helped organize Boulder Ruby since 2019. He's been an authorized Amazon Web Services instructor. He's worked with very small startups and companies like Oracle and Level 3. 
       author_headshot: /assets/img/dan_moore.png
       author_twitter: https://twitter.com/mooreds
-  dot_five:
+- dot_five:
   name: v0.5
   date: May 27th, 2021 19:00 UTC
-  description: CFP is open. 
+  description: CFP is open! 
   event_text: Ruby Galaxy May 🌌
   hosts:
     - danny_ramos
