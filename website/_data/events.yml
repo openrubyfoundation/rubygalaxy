@@ -110,4 +110,29 @@
     - rachael_wright_munn
   guests:
   talks:
+- dot_six:
+  name: v0.6
+  date: June 24th, 2021 19:00 UTC
+  description: RubyCentral, RailsGirls, and mentorship.
+  event_text: Ruby Galaxy July 🌌
+  hosts:
+    - rachael_wright_munn
+    - kirk_haines
+  guests:
+    - megan_tiu
+    - ramon_huidobro
+  talks:
+    - name: Ruby Central, Apprenticeships, and Ruby
+      abstract: Megan Tiu talks about RubyCentral, Apprenticeships, Ruby, and their work with RailsGirls
+      author: Megan Tiu
+      author_headshot: /assets/img/megan_tiu.jpg
+      author_twitter: https://twitter.com/megantiu
+    - name: Conversation with Rails Girls Mentors
+      abstract: Megan Tiu and Ramón Huidobro talk about RailsGirls and their mentorship experiences.
+      author: Megan Tiu and Ramón Huidobro
+    - name: "New Dev, Old Codebase: A Series of Mentorship Stories"
+      abstract: Ramón Huidobro talks about his experiences with mentorship.
+      author: Ramón Huidobro
+      author_headshot: /assets/img/ramon_huidobro.jpg
+      author_twitter: https://twitter.com/hola_soy_milk
   upcoming: true

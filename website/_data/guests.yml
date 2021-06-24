@@ -1,5 +1,13 @@
 # Guest List
 
+megan_tiu:
+  name: Megan Tiu
+  twitter: https://twitter.com/megantiu
+
+ramon_huidobro:
+  name: Ramón Huidobro
+  twitter: https://twitter.com/hola_soy_milk
+
 aaron_patterson:
   name: Aaron Patterson
   description: Ruby on Rails author
