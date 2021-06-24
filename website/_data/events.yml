@@ -111,7 +111,7 @@
   guests:
   talks:
 - dot_seven:
-  name: v0.7
+  name: v0.6
   date: June 24th, 2021 19:00 UTC
   description: RubyCentral, RailsGirls, and mentorship.
   event_text: Ruby Galaxy July 🌌
