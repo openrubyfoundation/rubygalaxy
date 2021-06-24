@@ -110,7 +110,7 @@
     - rachael_wright_munn
   guests:
   talks:
-- dot_seven:
+- dot_six:
   name: v0.6
   date: June 24th, 2021 19:00 UTC
   description: RubyCentral, RailsGirls, and mentorship.
@@ -123,7 +123,7 @@
     - ramon_huidobro
   talks:
     - name: Ruby Central, Apprenticeships, and Ruby
-      abstract: Megan Tiu talks about RubyCentral, Apprenticeships, Ruby, and her work with RailsGirls
+      abstract: Megan Tiu talks about RubyCentral, Apprenticeships, Ruby, and their work with RailsGirls
       author: Megan Tiu
       author_headshot: /assets/img/megan_tiu.jpg
       author_twitter: https://twitter.com/megantiu
